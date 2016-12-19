@@ -1,13 +1,13 @@
 # main links links
 main:
   - title: "About"
-    url: https://mounicam.github.io/
+    url: /
 
   - title: "Education & Experience"
-    url: /
+    url: /edu_and_exp
 
   - title: "Projects"
-    url: /
+    url: /projects
 
   - title: "CV"
     url: /Mounica_Maddela_CV.pdf
