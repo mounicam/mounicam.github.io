@@ -1,7 +1,13 @@
 # main links links
 main:
-  - title: "Sample Navigation Link"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/navigation/
+  - title: "About"
+    url: https://mounicam.github.io/
 
-  - title: "Sample Navigation Link 2"
+  - title: "Education & Experience"
     url: /
+
+  - title: "Projects"
+    url: /
+
+  - title: "CV"
+    url: /Mounica_Maddela_CV.pdf
