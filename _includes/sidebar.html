@@ -21,5 +21,14 @@
       {% include nav_list nav=page.sidebar.nav %}
     {% endif %}
   {% endif %}
+  {% if page.url == "/projects/" %}
+    <div id="all-tags">
+      <h5> Tags </h5>
+      <span class="all-tags-help float-left"> Search for tags for corresponding projects </span>
+      <span class="label label-info float-left">social media</span>
+      <span class="label label-info float-left">natural language processing</span>
+    </div>
+  {% endif %}
+
   </div>
 {% endif %}

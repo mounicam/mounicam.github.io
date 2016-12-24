@@ -7,11 +7,12 @@
 <script type="text/javascript">
   $(document).ready(function() {
     $('#projects_table').DataTable({
+      "sDom" : 'ifrtip',
       "oLanguage": {
         "sSearch": ""
       },
       "ordering": false,
-      "paging": true
+      "bLengthChange": false
     });
     $('#experience_table').DataTable({
       "sDom": "rt",
@@ -32,8 +33,17 @@
     $('.dataTables_filter input[type="search"]').
     attr('placeholder', 'Search projects ....').
     css({
-      'width': '200px',
-      'display': 'inline-block'
+      'width': '300px',
+      'display': 'inline-block',
+      'font': '15px arial, sans-serif'
+    });
+    $('.dataTables_info').
+    css({
+      'font': '15px arial, sans-serif'
+    });
+    $('.dataTables_paginate').
+    css({
+      'font': '15px arial, sans-serif'
     });
     $('thead').hide();
   });
