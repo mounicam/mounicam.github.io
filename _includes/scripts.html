@@ -1,4 +1,42 @@
-<script src="{{ base_path }}/assets/js/main.min.js"></script>
-
+<script src="{{ base_path }}/assets/js/main.min.js">
+</script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js">
+</script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#projects_table').DataTable({
+      "oLanguage": {
+        "sSearch": ""
+      },
+      "ordering": false,
+      "paging": true
+    });
+    $('#experience_table').DataTable({
+      "sDom": "rt",
+      "ordering": false
+    });
+    $('#education_table').DataTable({
+      "sDom": "rt",
+      "ordering": false
+    });
+    $('#skills_table').DataTable({
+      "sDom": "rt",
+      "ordering": false
+    });
+    $('#teaching_table').DataTable({
+      "sDom": "rt",
+      "ordering": false
+    });
+    $('.dataTables_filter input[type="search"]').
+    attr('placeholder', 'Search projects ....').
+    css({
+      'width': '200px',
+      'display': 'inline-block'
+    });
+    $('thead').hide();
+  });
+</script>
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
