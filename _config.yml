@@ -1,230 +1,81 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
+# Dependencies
+markdown:       kramdown
+highlighter:    rouge
 
-# Site Settings
-locale                   : "en"
-title                    : "Mounica Maddela"
-title_separator          : "-"
-name                     : "Mounica Maddela"
-description              : "This is my personal website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-# breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
-comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
-  disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : # "master", "gh-pages"
-  commitMessage          : "New comment."
-  filename               : comment-{@timestamp}
-  format                 : "yml"
-  moderation             : true
-  path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
-  transforms:
-    email                : "md5"
-  generatedFields:
-    date:
-      type               : "date"
-      options:
-        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
-atom_feed:
-  path                   : # blank (default) uses feed.xml
-
-# SEO Related
-google_site_verification :
-bing_site_verification   :
-alexa_site_verification  :
-yandex_site_verification :
-
-# Social Sharing
-twitter:
-  username               :
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 : # Open Graph/Twitter default site image
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
-social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
-
-# Analytics
-analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
-  google:
-    tracking_id          :
-
-
-# Site Author
-author:
-  name             : "Mounica Maddela"
-  avatar           : "bio-photo.jpg"
-  bio              : "(215)-290-6918
-                      mmaddela1005@gmail.com"
-  location         : "Seattle, USA"
-  email            :
-  uri              :
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         :
-  foursquare       :
-  github           :
-  google_plus      :
-  keybase          :
-  instagram        :
-  lastfm           :
-  linkedin         :
-  pinterest        :
-  soundcloud       :
-  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
-  steam            :
-  tumblr           :
-  twitter          :
-  vine             :
-  weibo            :
-  xing             :
-  youtube          :
-
-
-# Reading Files
-include:
-  - .htaccess
-  - _pages
-exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - vendor
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/plugins
-  - assets/js/_main.js
-  - assets/js/vendor
-  - Capfile
-  - CHANGELOG
-  - config
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - log
-  - node_modules
-  - package.json
-  - Rakefile
-  - README
-  - tmp
-keep_files:
-  - .git
-  - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
-
-# Conversion
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
-
-
-# Markdown Processing
 kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
+  auto_ids:     true
 
+# Permalinks
+permalink:      pretty
 
-# Sass/SCSS
-sass:
-  sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+# Server
+source:         "."
+destination:    ./_gh_pages
+host:           0.0.0.0
+port:           9001
+baseurl:        ""
+url:            "https://getbootstrap.com"
+encoding:       UTF-8
+exclude:
+  - .git/
+  - .github/
+  - assets/scss/
+  - build/
+  - js/
+  - node_modules/
+  - nuget/
+  - scss/
+  - vendor/
+  - CODE_OF_CONDUCT.md
+  - composer.json
+  - Gemfile
+  - Gemfile.lock
+  - package.js
+  - package.json
+  - package-lock.json
+  - README.md
+  - sache.json
+  - twbsconfig.yml
 
-
-# Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-
-# Plugins
-gems:
-  - jekyll-paginate
+plugins:
+  - jekyll-redirect-from
   - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
+  - jekyll-toc
 
-# mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
+# Social
+title:              Bootstrap
+description:        "The most popular HTML, CSS, and JS library in the world."
+twitter:            getbootstrap
+authors:            "Mark Otto, Jacob Thornton, and Bootstrap contributors"
+social_image_path:  /assets/brand/bootstrap-social.png
+social_logo_path:   /assets/brand/bootstrap-social-logo.png
 
+# Custom variables
+current_version:      4.1.1
+current_ruby_version: 4.1.1
+docs_version:         4.1
+repo:                 "https://github.com/twbs/bootstrap"
+slack:                "https://bootstrap-slack.herokuapp.com"
+blog:                 "https://blog.getbootstrap.com"
+expo:                 "https://expo.getbootstrap.com"
+jobs:                 "https://jobs.getbootstrap.com"
+themes:               "https://themes.getbootstrap.com"
 
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path/my-awesome-category/index.html ~> path: /
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+download:
+  source:           "https://github.com/twbs/bootstrap/archive/v4.1.1.zip"
+  dist:             "https://github.com/twbs/bootstrap/releases/download/v4.1.1/bootstrap-4.1.1-dist.zip"
 
+cdn:
+  # See https://www.srihash.org for info on how to generate the hashes
+  css:              "https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+  css_hash:         "sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+  js:               "https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+  js_hash:          "sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+  jquery:           "https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  jquery_hash:      "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  popper:           "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+  popper_hash:      "sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
 
-# HTML Compression
-# - http://jch.penibelst.de/
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
+toc:
+  min_level:        2
+  max_level:        4

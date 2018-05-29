@@ -1,52 +1,26 @@
-<script src="{{ base_path }}/assets/js/main.min.js">
-</script>
-<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js">
-</script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    $('#projects_table').DataTable({
-      "sDom" : 'ifrtip',
-      "oLanguage": {
-        "sSearch": ""
-      },
-      "ordering": false,
-      "bLengthChange": false
-    });
-    $('#experience_table').DataTable({
-      "sDom": "rt",
-      "ordering": false
-    });
-    $('#education_table').DataTable({
-      "sDom": "rt",
-      "ordering": false
-    });
-    $('#skills_table').DataTable({
-      "sDom": "rt",
-      "ordering": false
-    });
-    $('#teaching_table').DataTable({
-      "sDom": "rt",
-      "ordering": false
-    });
-    $('.dataTables_filter input[type="search"]').
-    attr('placeholder', 'Search projects ....').
-    css({
-      'width': '300px',
-      'display': 'inline-block',
-      'font': '15px arial, sans-serif'
-    });
-    $('.dataTables_info').
-    css({
-      'font': '15px arial, sans-serif'
-    });
-    $('.dataTables_paginate').
-    css({
-      'font': '15px arial, sans-serif'
-    });
-    $('thead').hide();
-  });
-</script>
-{% include analytics.html %}
-{% include /comments-providers/scripts.html %}
+<script src="{{ site.cdn.jquery }}" integrity="{{ site.cdn.jquery_hash }}" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="{{ site.baseurl }}/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+
+<script src="{{ site.baseurl }}/assets/js/vendor/popper.min.js"{% if site.github %} integrity="{{ site.cdn.popper_hash }}" crossorigin="anonymous"{% endif %}></script>
+
+{%- if site.github -%}
+  <script src="{{ site.baseurl }}/dist/js/bootstrap.min.js" integrity="{{ site.cdn.js_hash }}" crossorigin="anonymous"></script>
+{%- else -%}
+  <script src="{{ site.baseurl }}/dist/js/bootstrap.js"></script>
+{%- endif -%}
+
+{%- if page.layout == "docs" -%}
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+{%- endif -%}
+
+{%- if site.github -%}
+  <script src="{{ site.baseurl }}/assets/js/docs.min.js"></script>
+{%- else -%}
+  <script src="{{ site.baseurl }}/assets/js/vendor/anchor.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/vendor/clipboard.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/vendor/holder.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/src/application.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/src/search.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/src/ie-emulation-modes-warning.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/src/pwa.js"></script>
+{%- endif -%}

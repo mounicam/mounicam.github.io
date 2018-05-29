@@ -1,124 +1,171 @@
-# [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/)
+<p align="center">
+  <a href="https://getbootstrap.com/">
+    <img src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width=72 height=72>
+  </a>
 
-[![GitHub release](https://img.shields.io/github/release/mmistakes/minimal-mistakes.svg)](https://github.com/mmistakes/minimal-mistakes/releases) [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)
+  <h3 align="center">Bootstrap</h3>
 
-Minimal Mistakes is a flexible two-column Jekyll theme. Perfect for hosting your personal site, blog, or portfolio on GitHub or self-hosting on your own server. As the name implies --- styling is purposely minimalistic to be enhanced and customized by you :smile:.
+  <p align="center">
+    Sleek, intuitive, and powerful front-end framework for faster and easier web development.
+    <br>
+    <a href="https://getbootstrap.com/docs/4.1/"><strong>Explore Bootstrap docs »</strong></a>
+    <br>
+    <br>
+    <a href="https://github.com/twbs/bootstrap/issues/new?template=bug.md">Report bug</a>
+    ·
+    <a href="https://github.com/twbs/bootstrap/issues/new?template=feature.md&labels=feature">Request feature</a>
+    ·
+    <a href="https://themes.getbootstrap.com/">Themes</a>
+    ·
+    <a href="https://jobs.getbootstrap.com/">Jobs</a>
+    ·
+    <a href="https://blog.getbootstrap.com/">Blog</a>
+  </p>
+</p>
 
-See what's new in the [CHANGELOG](CHANGELOG.md).
+<br>
 
-Interested in testing out a [**pre-release "gemified" version**](https://github.com/mmistakes/minimal-mistakes/tree/feature/theme-gem) of the theme? Read this blog post to [learn how](https://mmistakes.github.io/minimal-mistakes/jekyll/gemified-theme-beta/).
+## Table of contents
 
-[![Minimal Mistakes live preview][2]][1]
+- [Quick start](#quick-start)
+- [Status](#status)
+- [What's included](#whats-included)
+- [Bugs and feature requests](#bugs-and-feature-requests)
+- [Documentation](#documentation)
+- [Contributing](#contributing)
+- [Community](#community)
+- [Versioning](#versioning)
+- [Creators](#creators)
+- [Copyright and license](#copyright-and-license)
 
-[1]: https://mmistakes.github.io/minimal-mistakes/
-[2]: images/mm-browser-mockups.png (live preview)
+## Quick start
 
-The theme includes responsive layouts (`single`, `archive`, and `splash` pages) that look great on mobile and desktop browsers.
+Several quick start options are available:
 
-![layout examples](images/mm-layout-examples.png)
+- [Download the latest release.](https://github.com/twbs/bootstrap/archive/v4.1.1.zip)
+- Clone the repo: `git clone https://github.com/twbs/bootstrap.git`
+- Install with [npm](https://www.npmjs.com/): `npm install bootstrap`
+- Install with [yarn](https://yarnpkg.com/): `yarn add bootstrap@4.1.1`
+- Install with [Composer](https://getcomposer.org/): `composer require twbs/bootstrap:4.1.1`
+- Install with [NuGet](https://www.nuget.org/): CSS: `Install-Package bootstrap` Sass: `Install-Package bootstrap.sass`
 
-## [Installation and Setup](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/) / [Preview the Theme](https://mmistakes.github.io/minimal-mistakes/)
+Read the [Getting started page](https://getbootstrap.com/docs/4.0/getting-started/introduction/) for information on the framework contents, templates and examples, and more.
 
-### Notable Features
+## Status
 
-- Compatible with Jekyll 3.x and GitHub Pages
-- Support for Jekyll's built-in Sass/SCSS preprocessor
-- Several layout options (single, archive, splash pages)
-- SEO optimized with support for [Twitter Cards](https://dev.twitter.com/cards/overview) and [Open Graph](http://ogp.me/) data
-- Optional header images, sidebars, table of contents, galleries, related posts, breadcrumb links, and more.
-- Optional comments ([Disqus](https://disqus.com/), [Facebook](https://developers.facebook.com/docs/plugins/comments), Google+, [Discourse](https://www.discourse.org/), static-based via [Staticman](https://staticman.net/), and custom).
-- Optional analytics ([Google Analytics](https://www.google.com/analytics/) and custom).
-- UI localized text: English (default), Spanish, French, and Turkish.
+[![Slack](https://bootstrap-slack.herokuapp.com/badge.svg)](https://bootstrap-slack.herokuapp.com/)
+[![Build Status](https://img.shields.io/travis/twbs/bootstrap/v4-dev.svg)](https://travis-ci.org/twbs/bootstrap)
+[![npm version](https://img.shields.io/npm/v/bootstrap.svg)](https://www.npmjs.com/package/bootstrap)
+[![Gem version](https://img.shields.io/gem/v/bootstrap.svg)](https://rubygems.org/gems/bootstrap)
+[![Meteor Atmosphere](https://img.shields.io/badge/meteor-twbs%3Abootstrap-blue.svg)](https://atmospherejs.com/twbs/bootstrap)
+[![Packagist Prerelease](https://img.shields.io/packagist/vpre/twbs/bootstrap.svg)](https://packagist.org/packages/twbs/bootstrap)
+[![NuGet](https://img.shields.io/nuget/vpre/bootstrap.svg)](https://www.nuget.org/packages/bootstrap/absoluteLatest)
+[![peerDependencies Status](https://img.shields.io/david/peer/twbs/bootstrap.svg)](https://david-dm.org/twbs/bootstrap?type=peer)
+[![devDependency Status](https://img.shields.io/david/dev/twbs/bootstrap.svg)](https://david-dm.org/twbs/bootstrap?type=dev)
+[![CSS gzip size](http://img.badgesize.io/twbs/bootstrap/v4-dev/dist/css/bootstrap.min.css?compression=gzip&label=CSS+gzip+size)](https://github.com/twbs/bootstrap/tree/v4-dev/dist/css/bootstrap.min.css)
+[![JS gzip size](http://img.badgesize.io/twbs/bootstrap/v4-dev/dist/js/bootstrap.min.js?compression=gzip&label=JS+gzip+size)](https://github.com/twbs/bootstrap/tree/v4-dev/dist/js/bootstrap.min.js)
 
-#### Demo Pages
+[![Sauce Labs Test Status](https://saucelabs.com/browser-matrix/bootstrap.svg)](https://saucelabs.com/u/bootstrap)
 
-| Name                                        | Description                                           |
-| ------------------------------------------- | ----------------------------------------------------- |
-| [Post with Header Image][header-image-post] | A post with a large header image. |
-| [HTML Tags and Formatting Post][html-tags-post] | A variety of common markup showing how the theme styles them. |
-| [Syntax Highlighting Post][syntax-post] | Post displaying highlighted code. |
-| [Post with a Gallery][gallery-post] | A post showing several images wrapped in `<figure>` elements. |
-| [Sample Collection Page][sample-collection] | Single page from a collection. |
-| [Categories Archive][categories-archive] | Posts grouped by category. |
-| [Tags Archive][tags-archive] | Posts grouped by tags. |
+## What's included
 
-For even more demo pages check the [posts archive][year-archive].
+Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
 
-[header-image-post]: https://mmistakes.github.io/minimal-mistakes/layout-header-image-text-readability/
-[gallery-post]: https://mmistakes.github.io/minimal-mistakes/post%20formats/post-gallery/
-[html-tags-post]: https://mmistakes.github.io/minimal-mistakes/markup/markup-html-tags-and-formatting/
-[syntax-post]: https://mmistakes.github.io/minimal-mistakes/markup-syntax-highlighting/
-[sample-collection]: https://mmistakes.github.io/minimal-mistakes/recipes/chocolate-chip-cookies/
-[categories-archive]: https://mmistakes.github.io/minimal-mistakes/categories/
-[tags-archive]: https://mmistakes.github.io/minimal-mistakes/tags/
-[year-archive]: https://mmistakes.github.io/minimal-mistakes/year-archive/
+```
+bootstrap/
+├── css/
+│   ├── bootstrap.css
+│   ├── bootstrap.css.map
+│   ├── bootstrap.min.css
+│   ├── bootstrap.min.css.map
+│   ├── bootstrap-grid.css
+│   ├── bootstrap-grid.css.map
+│   ├── bootstrap-grid.min.css
+│   ├── bootstrap-grid.min.css.map
+│   ├── bootstrap-reboot.css
+│   ├── bootstrap-reboot.css.map
+│   ├── bootstrap-reboot.min.css
+│   └── bootstrap-reboot.min.css.map
+└── js/
+    ├── bootstrap.bundle.js
+    ├── bootstrap.bundle.min.js
+    ├── bootstrap.js
+    └── bootstrap.min.js
+```
 
----
+We provide compiled CSS and JS (`bootstrap.*`), as well as compiled and minified CSS and JS (`bootstrap.min.*`). CSS [source maps](https://developers.google.com/web/tools/chrome-devtools/debug/readability/source-maps) (`bootstrap.*.map`) are available for use with certain browsers' developer tools. Bundled JS files (`bootstrap.bundle.js` and minified `bootstrap.bundle.min.js`) include [Popper](https://popper.js.org/), but not [jQuery](https://jquery.com/).
+
+
+## Bugs and feature requests
+
+Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/twbs/bootstrap/blob/master/CONTRIBUTING.md#using-the-issue-tracker) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/twbs/bootstrap/issues/new).
+
+
+## Documentation
+
+Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](https://jekyllrb.com/) and publicly hosted on GitHub Pages at <https://getbootstrap.com/>. The docs may also be run locally.
+
+Documentation search is powered by [Algolia's DocSearch](https://community.algolia.com/docsearch/). Working on our search? Be sure to set `debug: true` in `assets/js/src/search.js` file.
+
+### Running documentation locally
+
+1. Run through the [tooling setup](https://getbootstrap.com/docs/4.0/getting-started/build-tools/#tooling-setup) to install Jekyll (the site builder) and other Ruby dependencies with `bundle install`.
+2. Run `npm install` to install Node.js dependencies.
+3. Run `npm run test` (or a specific NPM script) to rebuild distributed CSS and JavaScript files, as well as our docs assets.
+4. From the root `/bootstrap` directory, run `npm run docs-serve` in the command line.
+5. Open `http://localhost:9001` in your browser, and voilà.
+
+Learn more about using Jekyll by reading its [documentation](https://jekyllrb.com/docs/home/).
+
+### Documentation for previous releases
+
+- For v2.3.2: <https://getbootstrap.com/2.3.2/>
+- For v3.3.x: <https://getbootstrap.com/docs/3.3/>
+
+[Previous releases](https://github.com/twbs/bootstrap/releases) and their documentation are also available for download.
+
 
 ## Contributing
 
-Having trouble working with the theme? Found a typo in the documentation? Interested in adding a feature or [fixing a bug](https://github.com/mmistakes/minimal-mistakes/issues)? Then by all means [submit an issue](https://github.com/mmistakes/minimal-mistakes/issues/new) or [pull request](https://help.github.com/articles/using-pull-requests/). If this is your first pull request, it may be helpful to read up on the [GitHub Flow](https://guides.github.com/introduction/flow/) first.
+Please read through our [contributing guidelines](https://github.com/twbs/bootstrap/blob/master/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
 
-Minimal Mistakes has been designed as a base for you to customize and fit your site's unique needs. Please keep this in mind when requesting features and/or submitting pull requests. If it's not something that most people will use, I probably won't consider it. When in doubt ask. 
+Moreover, if your pull request contains JavaScript patches or features, you must include [relevant unit tests](https://github.com/twbs/bootstrap/tree/master/js/tests). All HTML and CSS should conform to the [Code Guide](https://github.com/mdo/code-guide), maintained by [Mark Otto](https://github.com/mdo).
 
-This goes for author sidebar links and "share button" additions -- I have no intention of merging in every possibly option, the essentials are there to get you started :smile:.
+Editor preferences are available in the [editor config](https://github.com/twbs/bootstrap/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org/>.
 
-### Pull Requests
 
-To help me out try to avoid creating pull requests on `master` and instead branch off of `develop`. It's much easier for me to test, merge, and roll them into new releases this way.
+## Community
 
----
+Get updates on Bootstrap's development and chat with the project maintainers and community members.
 
-## Credits
+- Follow [@getbootstrap on Twitter](https://twitter.com/getbootstrap).
+- Read and subscribe to [The Official Bootstrap Blog](https://blog.getbootstrap.com/).
+- Join [the official Slack room](https://bootstrap-slack.herokuapp.com/).
+- Chat with fellow Bootstrappers in IRC. On the `irc.freenode.net` server, in the `##bootstrap` channel.
+- Implementation help may be found at Stack Overflow (tagged [`bootstrap-4`](https://stackoverflow.com/questions/tagged/bootstrap-4)).
+- Developers should use the keyword `bootstrap` on packages which modify or add to the functionality of Bootstrap when distributing through [npm](https://www.npmjs.com/browse/keyword/bootstrap) or similar delivery mechanisms for maximum discoverability.
 
-### Creator
 
-**Michael Rose**
+## Versioning
 
-- <https://mademistakes.com>
-- <https://twitter.com/mmistakes>
-- <https://github.com/mmistakes>
+For transparency into our release cycle and in striving to maintain backward compatibility, Bootstrap is maintained under [the Semantic Versioning guidelines](https://semver.org/). Sometimes we screw up, but we'll adhere to those rules whenever possible.
 
-### Icons + Demo Images:
+See [the Releases section of our GitHub project](https://github.com/twbs/bootstrap/releases) for changelogs for each release version of Bootstrap. Release announcement posts on [the official Bootstrap blog](https://blog.getbootstrap.com/) contain summaries of the most noteworthy changes made in each release.
 
-- [The Noun Project](https://thenounproject.com) -- Garrett Knoll, Arthur Shlain, and [tracy tam](https://thenounproject.com/tracytam)
-- [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
-- [Unsplash](https://unsplash.com/)
 
-### Other:
+## Creators
 
-- [Jekyll](http://jekyllrb.com/)
-- [jQuery](http://jquery.com/)
-- [Susy](http://susy.oddbird.net/)
-- [Breakpoint](http://breakpoint-sass.com/)
-- [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/)
-- [FitVids.JS](http://fitvidsjs.com/)
-- Greedy Navigation - [lukejacksonn](http://codepen.io/lukejacksonn/pen/PwmwWV)
-- [jQuery Smooth Scroll](https://github.com/kswedberg/jquery-smooth-scroll)
-- [Stickyfill](https://github.com/wilddeer/stickyfill)
+**Mark Otto**
 
----
+- <https://twitter.com/mdo>
+- <https://github.com/mdo>
 
-## License
+**Jacob Thornton**
 
-The MIT License (MIT)
+- <https://twitter.com/fat>
+- <https://github.com/fat>
 
-Copyright (c) 2016 Michael Rose
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+## Copyright and license
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Code and documentation copyright 2011-2018 the [Bootstrap Authors](https://github.com/twbs/bootstrap/graphs/contributors) and [Twitter, Inc.](https://twitter.com) Code released under the [MIT License](https://github.com/twbs/bootstrap/blob/master/LICENSE). Docs released under [Creative Commons](https://github.com/twbs/bootstrap/blob/master/docs/LICENSE).
