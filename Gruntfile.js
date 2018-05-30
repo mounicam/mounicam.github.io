@@ -43,7 +43,7 @@ module.exports = function (grunt) {
     },
     clean: {
       build: {
-        src: ['dist/*/build.scss']
+        src: ['css/*/build.scss']
       }
     },
     concat: {
@@ -60,9 +60,9 @@ module.exports = function (grunt) {
       vendor: {
         files: [
           {expand: true, cwd: 'node_modules/font-awesome', src: ['css/**', 'fonts/**'], dest: 'docs/_vendor/font-awesome/'},
-          {expand: true, cwd: 'node_modules/jquery', src: ['dist/**'], dest: 'docs/_vendor/jquery/'},
-          {expand: true, cwd: 'node_modules/bootstrap', src: ['dist/**'], dest: 'docs/_vendor/bootstrap/'},
-          {expand: true, cwd: 'node_modules/popper.js', src: ['dist/**'], dest: 'docs/_vendor/popper.js/'}
+          {expand: true, cwd: 'node_modules/jquery', src: ['css/**'], dest: 'docs/_vendor/jquery/'},
+          {expand: true, cwd: 'node_modules/bootstrap', src: ['css/**'], dest: 'docs/_vendor/bootstrap/'},
+          {expand: true, cwd: 'node_modules/popper.js', src: ['css/**'], dest: 'docs/_vendor/popper.js/'}
         ]
       },
       css: {
@@ -77,7 +77,7 @@ module.exports = function (grunt) {
       }
     },
     watch: {
-      files: ['dist/*/_variables.scss', 'dist/*/_bootswatch.scss'],
+      files: ['css/*/_variables.scss', 'css/*/_bootswatch.scss'],
       tasks: 'build',
       options: {
         livereload: true,
@@ -110,7 +110,7 @@ module.exports = function (grunt) {
     theme = theme === undefined ? grunt.config('buildtheme') : theme;
     compress = compress === undefined ? true : compress;
 
-    var isValidTheme = grunt.file.exists('dist/' + theme, '_variables.scss') && grunt.file.exists('dist/' + theme, '_bootswatch.scss');
+    var isValidTheme = grunt.file.exists('css/' + theme, '_variables.scss') && grunt.file.exists('css/' + theme, '_bootswatch.scss');
 
      // cancel the build (without failing) if this directory is not a valid theme
     if (!isValidTheme) {
@@ -123,8 +123,8 @@ module.exports = function (grunt) {
     var files = {};
     var dist = {};
     concatSrc = 'build/scss/build.scss';
-    concatDest = 'dist/' + theme + '/build.scss';
-    scssSrc = 'dist/' + theme + '/build.scss';
+    concatDest = 'css/' + theme + '/build.scss';
+    scssSrc = 'css/' + theme + '/build.scss';
     scssDest = '<%=builddir%>/' + theme + '/bootstrap.css';
 
     dist = {src: concatSrc, dest: concatDest};
@@ -133,8 +133,8 @@ module.exports = function (grunt) {
     files[scssDest] = scssSrc;
     grunt.config('sass.dist.files', files);
     grunt.config('sass.dist.options.outputStyle', 'expanded');
- 
-    grunt.task.run(['concat', 'sass:dist', 'postcss', 'clean:build',
+
+    grunt.task.run(['concat', 'sass:css', 'postcss', 'clean:build',
       compress ? 'compress:' + scssDest + ':' + '<%=builddir%>/' + theme + '/bootstrap.min.css' : 'none',
       'copy:css']);
   });
@@ -145,7 +145,7 @@ module.exports = function (grunt) {
 
     grunt.config('sass.dist.files', files);
     grunt.config('sass.dist.options.outputStyle', 'compressed');
-    grunt.task.run(['sass:dist']);
+    grunt.task.run(['sass:css']);
   });
 
   grunt.registerMultiTask('swatch', 'build a theme', function() {
