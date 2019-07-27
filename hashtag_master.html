@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <title>#HashtagMaster</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="docs/_assets/css/custom.min.css">
+    <link rel="shortcut icon" href="favicon.png">
+
+</head>
+<body style="font-size:1.0rem">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container" style="margin-top:8px">
+        <a class="navbar-brand" style="font-size:2.09375rem" href="#">
+          #HashtagMaster: A Semantic Analysis Tool for Hashtags
+        </a>
+    </div>
+</nav>
+
+<div class="container text-justify" style="margin-top: 30px">
+    <div class="col-lg-12">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-8">
+                    <p>
+                     Hashtags play a central role in online communication by increasing discoverability,
+                     aiding search and providing additional semantics. However, inferring
+                     the semantics of hashtags is non-trivial since many hashtags contain
+                     multiple tokens joined together, which leads to multiple potential interpretations.
+                     Hashtags tend to contain rare tokens like named entities, event names, abbreviations
+                     and spelling variations, which hinders their understanding.
+                    </p>
+                    <p>
+                      We developed a tool called  <span class="font-weight-bold"> HashtagMaster</span>,
+                      which <span class="font-weight-bold">segments a given hashtag into a sequence of meaningful words. </span>
+                      It uses a novel neural approach which helps with rare tokens and multiple
+                      interpretations. We also released a <span class="font-weight-bold">new dataset for hashtag segmentation</span> consisting
+                      of 12,594 hashtags along with their manual segmentaitons. For more details, please check our
+                      <a href="https://www.aclweb.org/anthology/P19-1242">paper</a>.
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <a href="http://www.adamkoford.com/">
+                      <img style="width:100%" src="hashtagmaster_logo.jpeg">
+                    </a>
+                    <span class="text-muted">
+                      <i>Yoda Twitter Avatar by Adam Koford</i>
+                    </span>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" style="margin-top: 30px">
+    <div class="col-lg-12">
+        <a id="examples"><h2>Examples</h2></a>
+        <table style="border-collapse: separate;border-spacing: 0 1em;">
+          <col width="65%">
+          <col width="35%">
+          <tr>
+            <th style="padding:0 15px 0 15px;" >Hashtag with Tweet</th>
+            <th style="padding:0 15px 0 15px;" >Segmentation</th>
+          </tr>
+          <tr>
+            <td style="padding:0 15px 0 15px;">want to go to the Valley Jazz Fest tonight but I need to do more work  <span style="color: #1da1f2"> #ihaterotoscoping4eva</span>.</td>
+            <td style="padding:0 15px 0 15px;">I have rotoscoping 4eva</td>
+          </tr>
+          <tr>
+            <td style="padding:0 15px 0 15px;"><span style="color: #1da1f2"> #netprophet </span> Mxit's Herman Heunis next at netprophet... I'm ready.</td>
+            <td style="padding:0 15px 0 15px;">Netprophet</td>
+          </tr>
+          <tr>
+            <td style="padding:0 15px 0 15px;">Glad to know how the <span style="color: #1da1f2">#twedding</span> while being out of the country - congratluations again to @melvinyuan and ruth.</td>
+            <td style="padding:0 15px 0 15px;">Twedding</td>
+          </tr>
+          <tr>
+            <td style="padding:0 15px 0 15px;">#wheniruletheworld Im gonna #fixreplies <span style="color: #1da1f2">#GetPembsDaveAJob</span> on #creditcrunchtv watch #startrek and support #maternalhealth thats #whyitweet.</td>
+            <td style="padding:0 15px 0 15px;">Get Pemb Daves A Job</td>
+          </tr>
+          <tr>
+            <td style="padding:0 15px 0 15px;"><span style="color: #1da1f2">#blogher09</span> Please contact me if you have a Blogher 09 ticket you would like to get rid of!!</td>
+            <td style="padding:0 15px 0 15px;">Blogher 09</td>
+          </tr>
+          <tr>
+            <td style="padding:0 15px 0 15px;">@AmberCadabra I make a really tasty fruit smoothie, crepes, and banana fosters french toast.  Can I be included <span style="color: #1da1f2">#brunchrules</span></td>
+            <td style="padding:0 15px 0 15px;">brunch rules</td>
+          </tr>
+
+
+
+
+        </table>
+    </div>
+</div>
+
+<div class="container" style="margin-top: 30px">
+    <div class="col-lg-12">
+        <a id='code'><h2>Code</h2></a>
+        The code for our approach and data are publicly available on <a href="https://github.com/mounicam/hashtag_master">Github</a>.
+    </div>
+</div>
+
+<div class="container" style="margin-top: 30px">
+    <div class="col-lg-12">
+        <a id="citation"><h2>Citation</h2></a>
+        <p>Please cite if you use any of our resources.</p>
+        <pre style="border: 1px solid #e8e8e8;font-size: 13px;background-color: whitesmoke;">
+
+            @InProceedings{ACL-2019-Maddela,
+              author = "Maddela, Mounica and Xu, Wei and Preoţiuc-Pietro, Daniel",
+              title = "Multi-task Pairwise Neural Ranking for Hashtag Segmentation",
+              booktitle = "Proceedings of the Association for Computational Linguistics (ACL)",
+              year = "2019"
+            }
+        </pre>
+    </div>
+</div>
+
+<div class="container" style="margin-top: 30px">
+    <div class="col-lg-12">
+        <a id='code'><h2>Contact</h2></a>
+        If you have any issue with the data, please contact <span class="font-weight-bold"> maddela.4[at]osu.edu </span>.
+        For any question regarding the code, please <a href="https://github.com/mounicam/hashtag_master/issues">
+          open an issue on Github</a>.
+    </div>
+</div>
+
+
+<script src="_vendor/jquery/dist/jquery.min.js"></script>
+<script src="_vendor/popper.js/dist/umd/popper.min.js"></script>
+<script src="_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="_assets/js/custom.js"></script>
+</body>
+</html>
