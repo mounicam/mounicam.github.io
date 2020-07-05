@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.css" media="screen">
     <link rel="stylesheet" href="docs/_assets/css/custom.min.css">
     <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
@@ -60,15 +61,15 @@
                         Institute of Information Technology Hyderabad </span> (IIIT). At UPENN, I worked in the
                         field of social media text analytics and at IIIT, I worked in data visualization.
                         Prior to joining OSU, I also worked as a <span class="font-weight-bold">Software Development
-                        Engineer II </span> at <span class="font-weight-bold"> Big Data Technologies, Amazon </span>.
+                        Engineer </span> at <span class="font-weight-bold"> Big Data Technologies, Amazon </span>.
                     </p>
                     <p>
                         If you want to contact me, please drop me an email at <span class="font-weight-bold">
-                        maddela.4@osu.edu </span>. 
+                        maddela.4@osu.edu </span>.
                     </p>
                 </div>
                 <div class="col-lg-3">
-                    <img style="width:100%" src="profile.jpg">
+                    <img style="width:90%" src="profile.jpg"> <br/>
                 </div>
             </div>
         </div>
@@ -85,41 +86,39 @@
               <div >
                 Neural CRF Model for Sentence Alignment in Text Simplification
                 [<a href="http://arxiv.org/abs/2005.02324">paper</a>]
+                [<a href="https://github.com/mounicam/wiki-auto">code and data</a>]
+                [<a href="https://www.youtube.com/watch?v=xgYYlO8jkVc&feature=youtu.be">video</a>]
               </div>
-                Chao Jiang, Mounica Maddela, Wuwei Lan, Yang Zhong, Wei Xu <br/>
-                ACL 2020 <br/>
-              <br/>
+                Chao Jiang, <span class="font-weight-bold"> Mounica Maddela </span>, Wuwei Lan, Yang Zhong and Wei Xu.
+                <span class="font-weight-bold"> ACL </span> 2020 <br/><br/>
 
                 <div >
                   Code and Named Entity Recognition in StackOverflow
                   [<a href="https://arxiv.org/abs/2005.01634">paper</a>]
+                  [<a href="https://github.com/jeniyat/StackOverflowNER/">code and data</a>]
                 </div>
-                Jeniya Tabassum, Mounica Maddela, Wei Xu, Alan Ritter <br/>
-                ACL 2020 <br/>
+                Jeniya Tabassum, <span class="font-weight-bold"> Mounica Maddela </span>, Wei Xu and Alan Ritter.
+                <span class="font-weight-bold"> ACL </span> 2020 <br/><br/>
 
-                <br/>
-
-                    <div >
+                <div >
                       Multi-task Pairwise Neural Ranking for Hashtag Segmentation
                       [<a href="HashtagMaster.pdf">paper</a>]
                       [<a href="hashtag_master">project</a>]
                       [<a href="https://github.com/mounicam/hashtag_master">code and data</a>]
                       [<a href="acl2019-poster-final.pdf">poster</a>]
-                    </div>
-                    Mounica Maddela, Wei Xu and Daniel Preoţiuc-Pietro <br/>
-                    ACL 2019 <br/>
+                </div>
+                <span class="font-weight-bold"> Mounica Maddela </span>, Wei Xu and Daniel Preoţiuc-Pietro,
+                <span class="font-weight-bold"> ACL </span> 2019 <br/><br/>
 
-                    <br/>
-
-                    <div >
+                <div >
                       A Word-Complexity Lexicon and A Neural Readability
                       Ranking Model for Lexical Simplification
                       [<a href="WC_Lexicon_NRR.pdf">paper</a>]
                       [<a href="2018_EMNLP_mm_07.pdf">slides</a>]
                       [<a href="https://github.com/mounicam/lexical_simplification">code and data</a>]
-                    </div>
-                    Mounica Maddela and Wei Xu <br/>
-                    EMNLP 2018 <br/>
+                </div>
+                <span class="font-weight-bold"> Mounica Maddela </span> and Wei Xu,
+                <span class="font-weight-bold"> EMNLP </span> 2018 <br/><br/>
               </p>
           </li>
         </ul>
@@ -130,30 +129,30 @@
     <div class="col-lg-12">
         <h2><a name="research">Research</a></h2>
         <ul style="list-style-type: none">
+          <li>
+            <h5> Text Simplification (Fall 2019 - present) </h5>
+            <p>
+
+              Designed a new hybrid model for sentence simplification task.
+              Our approach combines linguistic rules with a data-driven Transformer model
+              to generate a simplified version of the input complex sentence. Our model outperformed the state-of-the-art
+              system in terms of both automatic metrics and human evaluation.
+            </p>
+          </li>
             <li>
               <h5> Pairwise Neural Ranking for Hashtag Segmentation (Fall 2018 - Spring 2019) </h5>
               <p>
-                Hashtags are often employed on social media and beyond to add metadata to a textual utterance with the goal of
-                increasing discoverability, aiding search, or providing additional semantics. However, the semantic content of hashtags
-                is not straightforward to infer as these represent ad-hoc conventions which frequently include multiple words joined together
-                and can include abbreviations and unorthodox spellings. We build a dataset of 12,594 hashtags split into individual
-                segments and propose a set of approaches for hashtag segmentation by framing it as a pairwise ranking problem between candidate
-                segmentations. Our novel neural approaches demonstrate 24.6% error reduction in hashtag segmentation accuracy compared to the
-                current state-of-the-art method. Finally, we demonstrate that a deeper understanding of hashtag semantics obtained through
-                segmentation is useful for downstream applications such as sentiment analysis, for which we achieved a 2.6% increase in average
-                recall on the SemEval 2017 sentiment analysis dataset.
+                 Developed a novel neural model to break a hashtag into its constituent words. Our approach addresses
+                 the diverse language style in social media and also adapts to the type of hashtag.
+                 Our model outperformed the state-of-the-art by 1.8 points in F1 and also improved the
+                 performance of the downstream sentiment analysis task by 2.4 points in F1.
               </p>
             </li>
             <li>
                 <h5>Lexical Simplification using Neural Readability Ranker (Fall 2017 - Spring 2018) </h5>
-                <p>
-                    Current lexical simplification approaches rely heavily on heuristics and corpus level features
-                    that do not always align with human judgment. We create a human-rated word-complexity lexicon
-                    of 15,000 English words and propose a novel neural readability ranking model with a Gaussian-based
-                    feature vectorization layer that utilizes these human ratings to measure the complexity of any
-                    given word or phrase. Our model performs better than the state-of-the-art systems for different
-                    lexical simplification tasks and evaluation datasets. Additionally, we also produce SimplePPDB++,
-                    a lexical resource of over 10 million simplifying paraphrase rules, by applying our model to the Paraphrase Database (PPDB).
+                <p> Developed a classifier that captures word spelling patterns  to predict how likely the input word can be
+                  a code token without any sentential context. When combined with a BERT-based Named Entity Recognizer,
+                  the classifier has shown to improve the recognizer performance on StackOverflow posts by 2.7 points in F1.
                 </p>
             </li>
             <li>
@@ -162,21 +161,6 @@
                     The project was a part of World Well Being Project (WWBP). We captured the
                     different sources and interpretations of well-being across various cultures or countries.
                     using the context of sentiment words and their distribution across countries.
-                </p>
-            </li>
-            <li>
-                <h5>CROVHD (Monsoon/Fall 2011 - Spring 2013)</h5>
-                <p>
-                    We developed a new visualization system called CROVHD (Concentric Rings of Visualization
-                    of High Dimensional Data) to visualize the high dimensional data as a 2-D representation.
-                    We also extended this system to 3-D Cone visualization to visualize k-nearest neighbours.
-                </p>
-                <p>
-                    <div class="font-italic">
-                        Visualizing Nearest Neighbours for Large High Dimensional Datasets <br/>
-                    </div>
-                    Mounica Maddela and Kamalakar Karlapalem <br/>
-                    IEEE Symposium on Large Scale Data Analytics and Visualization, poster. <br/>
                 </p>
             </li>
         </ul>
