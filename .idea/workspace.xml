@@ -2,184 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7543049c-6599-4532-b2ad-637c181904bd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gruntfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/Gruntfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/thumbnail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/js/postcss.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/scss/build.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/cerulean/_bootswatch.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/cerulean/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/cerulean/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/cerulean/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/cyborg/_bootswatch.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/cyborg/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/cyborg/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/cyborg/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/darkly/_bootswatch.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/darkly/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/darkly/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/darkly/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/journal/_bootswatch.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/journal/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/journal/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/journal/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/litera/_bootswatch.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/litera/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/litera/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/litera/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/lumen/_bootswatch.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/_bootswatch.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/lumen/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/lumen/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/lumen/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/lux/_bootswatch.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/lux/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/lux/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/lux/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/materia/_bootswatch.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/materia/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/materia/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/materia/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/pulse/_bootswatch.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/pulse/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/pulse/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/pulse/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/sandstone/_bootswatch.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/sandstone/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/sandstone/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/sandstone/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/simplex/_bootswatch.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/simplex/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/simplex/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/simplex/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/sketchy/_bootswatch.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/sketchy/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/sketchy/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/sketchy/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/slate/_bootswatch.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/slate/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/slate/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/slate/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/solar/_bootswatch.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/solar/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/solar/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/solar/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/spacelab/_bootswatch.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/spacelab/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/spacelab/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/spacelab/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/superhero/_bootswatch.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/superhero/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/superhero/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/superhero/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.nojekyll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/4/lumen/_bootswatch.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/4/lumen/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/4/lumen/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/4/lumen/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/CV_New.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/CV_New.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_assets/css/custom.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/_assets/css/custom.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_assets/img/logo-dark.png" beforeDir="false" afterPath="$PROJECT_DIR$/_assets/img/logo-dark.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_assets/img/logo-nav.svg" beforeDir="false" afterPath="$PROJECT_DIR$/_assets/img/logo-nav.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_assets/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/_assets/img/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_assets/img/refs/csssecrets.png" beforeDir="false" afterPath="$PROJECT_DIR$/_assets/img/refs/csssecrets.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_assets/img/refs/eloquentjavascript.png" beforeDir="false" afterPath="$PROJECT_DIR$/_assets/img/refs/eloquentjavascript.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_assets/img/refs/htmlandcss.png" beforeDir="false" afterPath="$PROJECT_DIR$/_assets/img/refs/htmlandcss.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_assets/img/shopify-300x250-light@2x.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/_assets/img/shopify-300x250-light@2x.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_assets/img/shopify-728x90-light@2x.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/_assets/img/shopify-728x90-light@2x.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_assets/img/shopify.png" beforeDir="false" afterPath="$PROJECT_DIR$/_assets/img/shopify.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_assets/js/bsa.js" beforeDir="false" afterPath="$PROJECT_DIR$/_assets/js/bsa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_assets/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/_assets/js/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_assets/scss/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_assets/scss/custom.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/bootstrap/dist/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/bootstrap/dist/css/bootstrap-grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/bootstrap/dist/css/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/bootstrap/dist/css/bootstrap-grid.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/bootstrap/dist/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/bootstrap/dist/css/bootstrap-grid.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/bootstrap/dist/css/bootstrap-grid.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/bootstrap/dist/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/bootstrap/dist/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/bootstrap/dist/css/bootstrap-reboot.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/bootstrap/dist/css/bootstrap-reboot.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/bootstrap/dist/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/bootstrap/dist/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/bootstrap/dist/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/bootstrap/dist/css/bootstrap-reboot.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/bootstrap/dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/bootstrap/dist/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/bootstrap/dist/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/bootstrap/dist/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/bootstrap/dist/css/bootstrap.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/bootstrap/dist/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/bootstrap/dist/css/bootstrap.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/bootstrap/dist/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/bootstrap/dist/js/bootstrap.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/bootstrap/dist/js/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/bootstrap/dist/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/bootstrap/dist/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/bootstrap/dist/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/bootstrap/dist/js/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/bootstrap/dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/bootstrap/dist/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/bootstrap/dist/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/bootstrap/dist/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/bootstrap/dist/js/bootstrap.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/bootstrap/dist/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/bootstrap/dist/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/bootstrap/dist/js/bootstrap.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/font-awesome/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/font-awesome/css/font-awesome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/font-awesome/css/font-awesome.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/font-awesome/css/font-awesome.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/font-awesome/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/font-awesome/css/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/font-awesome/fonts/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/font-awesome/fonts/fontawesome-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/jquery/dist/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/jquery/dist/core.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/jquery/dist/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/jquery/dist/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/jquery/dist/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/jquery/dist/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/jquery/dist/jquery.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/jquery/dist/jquery.min.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/jquery/dist/jquery.slim.js" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/jquery/dist/jquery.slim.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/jquery/dist/jquery.slim.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/jquery/dist/jquery.slim.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/jquery/dist/jquery.slim.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/jquery/dist/jquery.slim.min.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/popper.js/dist/esm/popper-utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/popper.js/dist/esm/popper-utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/popper.js/dist/esm/popper-utils.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/popper.js/dist/esm/popper-utils.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/popper.js/dist/esm/popper-utils.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/popper.js/dist/esm/popper-utils.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/popper.js/dist/esm/popper-utils.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/popper.js/dist/esm/popper-utils.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/popper.js/dist/esm/popper.js" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/popper.js/dist/esm/popper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/popper.js/dist/esm/popper.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/popper.js/dist/esm/popper.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/popper.js/dist/esm/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/popper.js/dist/esm/popper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/popper.js/dist/esm/popper.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/popper.js/dist/esm/popper.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/popper.js/dist/popper-utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/popper.js/dist/popper-utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/popper.js/dist/popper-utils.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/popper.js/dist/popper-utils.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/popper.js/dist/popper-utils.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/popper.js/dist/popper-utils.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/popper.js/dist/popper-utils.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/popper.js/dist/popper-utils.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/popper.js/dist/popper.js" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/popper.js/dist/popper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/popper.js/dist/popper.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/popper.js/dist/popper.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/popper.js/dist/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/popper.js/dist/popper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/popper.js/dist/popper.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/popper.js/dist/popper.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/popper.js/dist/umd/popper-utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/popper.js/dist/umd/popper-utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/popper.js/dist/umd/popper-utils.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/popper.js/dist/umd/popper-utils.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/popper.js/dist/umd/popper-utils.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/popper.js/dist/umd/popper-utils.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/popper.js/dist/umd/popper-utils.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/popper.js/dist/umd/popper-utils.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/popper.js/dist/umd/popper.js" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/popper.js/dist/umd/popper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/popper.js/dist/umd/popper.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/popper.js/dist/umd/popper.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/popper.js/dist/umd/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/popper.js/dist/umd/popper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_vendor/popper.js/dist/umd/popper.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/_vendor/popper.js/dist/umd/popper.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api/4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/favicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/profile.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/profile.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/temp/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="134" column="37" selection-start-line="134" selection-start-column="37" selection-end-line="134" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -201,6 +30,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
@@ -215,6 +47,7 @@
     <option name="width" value="960" />
     <option name="height" value="877" />
   </component>
+  <component name="ProjectId" id="2MPzQQ58KIVeeXhSNKnSZKhsZip" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -234,12 +67,12 @@
       </pane>
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/mmaddela3/Documents/mounicam.github.io"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -248,18 +81,7 @@
       <recent name="$PROJECT_DIR$/docs/_assets" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -271,6 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1527650711256</updated>
       <workItem from="1527650712464" duration="915000" />
+      <workItem from="1677683993732" duration="2227000" />
     </task>
     <servers />
   </component>
@@ -302,10 +125,7 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+    <option name="version" value="3" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
