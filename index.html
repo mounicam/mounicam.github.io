@@ -17,188 +17,239 @@
 
        .authors {
         font-size: 13px;
+        color: #555;
+       }
+
+       .publication {
+        margin-bottom: 20px;
+        line-height: 1.6;
+       }
+
+       .publication .title {
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 4px;
+       }
+
+       .publication .venue {
+        font-size: 14px;
+        color: #333;
+        margin-top: 4px;
+       }
+
+       .publication .links {
+        margin-top: 4px;
+       }
+
+       section {
+        margin-bottom: 0px;
+       }
+
+       section h2 {
+        border-bottom: 2px solid #e0e0e0;
+        padding-bottom: 8px;
+        margin-bottom: 20px;
+       }
+
+       .service-item {
+        margin-bottom: 12px;
+       }
+
+       .about-section p {
+        text-align: justify;
+        line-height: 1.7;
+       }
+
+       .more-publications {
+        display: none;
+       }
+
+       .show-more-link {
+        cursor: pointer;
+        color: #0066cc;
+        text-decoration: none;
+        font-size: 14px;
+        margin-top: 10px;
+        display: inline-block;
+       }
+
+       .show-more-link:hover {
+        text-decoration: underline;
        }
   </style>
   <body>
     <div class="wrapper">
      <header>
-        <img src="profile.jpeg" alt="Profile pic." width="220" height="320" />
+        <img src="profile.jpeg" alt="Profile pic." width="220" height="280" />
         <p><h1> Mounica Maddela </h1></p>
 
-        <a href="mailto:mmaddela1005@gmail.com" class="fa fa-envelope disablea" style="font-size:2.1em;"></a>&nbsp;
-        <a href="https://twitter.com/mmaddela1005" class="fa fa-twitter disablea" style="font-size:2.1em;"></a>&nbsp;
-        <a href="https://www.linkedin.com/in/mounica-maddela-2485aa90/" class="fa fa-linkedin disablea"
-           style="font-size:2.1em;"></a>&nbsp;
-        <a href="https://github.com/mounicam/" class="fa fa-github disablea" style="font-size:2.1em;"></a>&nbsp;
-         <a href="https://scholar.google.com/citations?user=ajCtVL0AAAAJ&hl=en"
-            class="fa fa-google disablea" style="font-size:2.1em;"></a>&nbsp;
-
-        <br/><br/>
-        <a href="files/CV_Mounica_Maddela.pdf"><h3>CV</h3></a>
+        <div style="white-space: nowrap; display: flex; align-items: center; gap: 8px;">
+        <a href="mailto:mmaddela1005@gmail.com" class="fa fa-envelope disablea" style="font-size:2.1em;"></a>
+        <a href="https://www.linkedin.com/in/mmaddela/" class="fa fa-linkedin disablea" style="font-size:2.1em;"></a>
+        <a href="https://github.com/mounicam/" class="fa fa-github disablea" style="font-size:2.1em;"></a>
+        <a href="https://scholar.google.com/citations?user=ajCtVL0AAAAJ&hl=en" class="fa fa-google disablea" style="font-size:2.1em;"></a>
+        <a href="files/CV_Mounica_Maddela.pdf"><img src="cv.png" alt="CV" style="width:1.5em; height:1.5em; display: block;"/></a>
+        </div>
 
 
 
       </header>
-      <section>
-        <h2>About me</h2>
+      <section class="about-section">
+        <h2>About Me</h2>
           <p>
-            I am a Senior Language Modeling Engineer at <a href="https://www.bloomberg.com/company/values/tech-at-bloomberg/artificial-intelligence-ai/"> Bloomberg AI</a>  
-            working on adapting pretrained and language models for entity-centric analysis 
-            of news, social media, and financial documents. 
-            My research also focuses on building and evaluating
-            controllable systems based on large language models for different text-generation tasks. 
-            I recently completed my Ph.D. in the School of Interactive Computing at
-            Georgia Institute of Technology, advised by Professor <a href="https://cocoxu.github.io/">Wei Xu</a>.
-            My dissertation focused on building and evaluating text simplifcation systems for different user groups 
-            and domains. 
+            I am a Senior Language Modeling Engineer at <a href="https://www.bloomberg.com/company/values/tech-at-bloomberg/artificial-intelligence-ai/">Bloomberg AI</a>,
+            where I build entity-linking systems for financial domain. My research interests include
+            human-aligned evaluation for text generation, controllable generation, synthetic data generation,
+            and robust entity-linking.
+
+            At Bloomberg, my work spans training entity-linking systems on new domains,
+            developing benchmarks for complex reasoning over structured databases (STARQA), distilling LLMs
+            into efficient production systems for named entity recognition and linking, and building
+            data-centric frameworks for synthetic training data generation.
           </p>
           <p>
+            I completed my Ph.D. in Computer Science at Georgia Institute of Technology focused on building
+            and evaluating controllable models for text simplification. During my doctoral research,
+            I developed LENS, a learned evaluation metric for
+            text simplification, and created controllable generation models that balance different
+            simplification operations for diverse user groups and domains. My research also encompassed
+            neural approaches for entity-aware text understanding and handling noisy social media text.
+          </p>
+          <!-- <p>
               I received my Master's degree in Computer and Information Science
-              from the University of Pennsylvania (UPENN) and my Bachelor's degree in
+              from the University of Pennsylvania and my Bachelor's degree in
               Computer Science and Engineering from the International Institute of
-              Information Technology, Hyderabad (IIIT). Before joining my Ph.D.,
-              I also worked as a Software Development Engineer at Big Data Technologies, Amazon.
-          </p>
+              Information Technology, Hyderabad. Before my Ph.D., I worked
+              as a Software Development Engineer at Amazon.
+          </p> -->
         </section>
 
         <section>
+          <h2>Publications</h2>
 
-          <h2> Publications </h2>
-          <p> </b> LENS - A Learnable Evaluation Metric for Text Simplification <br/>
-            <i class="authors"> <b>Mounica Maddela</b>*, Yao Dou*, David Heineman, and Wei Xu </i> <br/>
-              <i class="authors">*equal contribution</i><br/>
-              ACL 2023 <br/>
-              [<a href="https://arxiv.org/abs/2212.09739">paper</a>]
-              [<a href="https://github.com/Yao-Dou/LENS">data</a>]
-          </p>
+          <div class="publication">
+            <div class="title">Adapting Sentence-Level Metrics for Document-Level Simplification</div>
+            <div class="authors"><b>Mounica Maddela</b> and Fernando Alva-Manchego</div>
+            <div class="venue">NAACL 2025</div>
+          </div>
 
-          <p> </b> Dancing between success and failure: Edit-level simplification evaluation using SALSA <br/>
-            <i class="authors"> David Heineman, Yao Dou, <b>Mounica Maddela</b>, and Wei Xu </i> <br/>
-              EMNLP 2023 <br/>
-              [<a href="https://arxiv.org/abs/2305.14458">paper</a>]
-              [<a href="https://github.com/davidheineman/salsa">code/data</a>]
-          </p>
+          <div class="publication">
+            <div class="title">STARQA: A Question Answering Dataset for Complex Analytical Reasoning over Structured Databases</div>
+            <div class="authors"><b>Mounica Maddela</b>, Lingjue Xie, Daniel Preoţiuc-Pietro, and Mausam</div>
+            <div class="venue">EMNLP 2025</div>
+          </div>
 
-          <p>
-              EntSUM: A Data Set for Entity-Centric Summarization <br/>
-              <i class="authors"> <b>Mounica Maddela</b>*, Mayank Kulkarni*, and Daniel Preoţiuc-Pietro</i> <br/>
-              <i class="authors">*equal contribution</i><br/>
-              ACL 2022 <br/>
-              [<a href="https://arxiv.org/abs/2204.02213">paper</a>]
-              [<a href="https://zenodo.org/record/6359875">data</a>]
-          </p>
-           <p>
-              A Dataset of Word-Complexity Judgements from Deaf and Hard-of-Hearing Adults for Text Simplification <br/>
-             <i class="authors"> Oliver Alonzo, Sooyeon Lee, <b>Mounica Maddela</b>, Wei Xu and Matt Huenerfauth</i> <br/>
-              TSAR Workshop at EMNLP 2022 <br/>
-              [<a href="https://aclanthology.org/2022.tsar-1.11/">paper</a>]
-          </p>
-           <p>
-              Extractive Entity-Centric Summarization as Sentence Selection using Bi-Encoders <br/>
-              <i class="authors"> Ella Hofmann-Coyle, Mayank Kulkarni, Lingjue Xie, <b> Mounica Maddela</b>, and Daniel Preoţiuc-Pietro </i> <br/>
-              AACL 2022 <br/>
-              [<a href=https://aclanthology.org/2022.aacl-short.40.pdf>paper</a>]
-          </p>
-          <p>
-              BiSECT: Learning to Split and Rephrase Sentences with Bitexts <br/>
-              <i class="authors">Joongwon Kim*, <b>Mounica Maddela</b>*, Reno Kriz, Wei Xu, and Chris Callison-Burch</i> <br/>
-              <i class="authors">*equal contribution</i><br/>
-              EMNLP 2021 <br/>
-              [<a href="https://arxiv.org/abs/2109.05006">paper</a>]
-              [<a href="https://github.com/mounicam/BiSECT">code and data</a>]
-          </p>
-          <p>
-              Controllable Text Simplification with Explicit Paraphrasing <br/>
-              <i class="authors"><b> Mounica Maddela</b>, Fernando Alva-Manchego, and Wei Xu </i><br/>
-              NAACL 2021 <br/>
-              [<a href="https://aclanthology.org/2021.naacl-main.277.pdf">paper</a>]
-              [<a href="https://github.com/mounicam/controllable_simplification">code/data</a>]
-              [<a href="files/naacl2021_controllable_poster.pdf">slides</a>]
-              [<a href="files/naacl2021_controllable_talk.pdf">poster</a>]
-          </p>
-          <p>
-            The GEM Benchmark: NLG, its Evaluation and Metrics <br/>
-              [<a href="https://arxiv.org/abs/2102.01672">paper</a>] [<a href="https://gem-benchmark.com/">project website</a>] <br/>
-            ACL 2021 <br/>
-          <p>
-               Neural CRF Model for Sentence Alignment in Text Simplification <br/>
-               <i class="authors">Chao Jiang, <b> Mounica Maddela </b>, Wuwei Lan, Yang Zhong and Wei Xu</i> <br/>
-              ACL 2020 <br/>
-              [<a href="http://arxiv.org/abs/2005.02324">paper</a>]
-              [<a href="https://github.com/chaojiang06/wiki-auto">code/data</a>]
-              [<a href="https://chaojiang06.github.io/files/ACL2020_alignment_slide_v10.pdf">slides</a>]
-              [<a href="https://www.youtube.com/watch?v=xgYYlO8jkVc&feature=youtu.be">video</a>]
-          </p>
-          <p>
-              Code and Named Entity Recognition in StackOverflow <br/>
-              <i class="authors">Jeniya Tabassum, <b> Mounica Maddela </b>, Wei Xu and Alan Ritter</i> <br/>
-              ACL 2020 <br/>
-              [<a href="https://arxiv.org/abs/2005.01634">paper</a>]
-              [<a href="https://github.com/jeniyat/StackOverflowNER/">code/data</a>]
-          </p>
-          <p>
-               Multi-task Pairwise Neural Ranking for Hashtag Segmentation <br/>
-              <i class="authors"><b> Mounica Maddela </b>, Wei Xu and Daniel Preoţiuc-Pietro</i> <br/>
-              ACL 2019 <br/>
-              [<a href="https://aclanthology.org/P19-1242">paper</a>]
-              [<a href="hashtag_master">project</a>]
-              [<a href="https://github.com/mounicam/hashtag_master">code/data</a>]
-              [<a href="files/acl2019-poster-final.pdf">poster</a>]
-          </p>
-          <p>
-               A Word-Complexity Lexicon and A Neural Readability Ranking Model for Lexical Simplification <br/>
-              <i class="authors"><b> Mounica Maddela </b> and Wei Xu</i> <br/>
-               EMNLP 2018 <br/>
-               [<a href="https://aclanthology.org/D18-1410/">paper</a>]
-               [<a href="files/2018_EMNLP_mm_07.pdf">slides</a>]
-               [<a href="https://github.com/mounicam/lexical_simplification">code/data</a>]
-           </p>
+          <div class="publication">
+            <div class="title">LENS: A Learnable Evaluation Metric for Text Simplification</div>
+            <div class="authors"><b>Mounica Maddela</b>*, Yao Dou*, David Heineman, and Wei Xu (*equal contribution)</div>
+            <div class="venue">ACL 2023</div>
+            <div class="links">[<a href="https://arxiv.org/abs/2212.09739">paper</a>] [<a href="https://github.com/Yao-Dou/LENS">data</a>]</div>
+          </div>
 
-      </section>
+          <div class="publication">
+            <div class="title">Training Models to Generate, Recognize, and Reframe Unhelpful Thoughts</div>
+            <div class="authors"><b>Mounica Maddela</b>, Megan Ung, Jing Xu, Andrea Madotto, and Y-Lan Boureau</div>
+            <div class="venue">ACL 2023</div>
+          </div>
 
-        <section>
-        <h2>Experience</h2>
-          <p>
-            <b>Senior Language Modeling Engineer</b> at Bloomberg AI <br/>
-            Dec 2023 - present
-          </p>
-          <p>
-              <b>Graduate Research Assistant</b> at Georgia Institute of Technology <br/>
-              Advisor: Professor Wei Xu <br/>
-              August 2020 - May 2023
-          </p>
-          <p>
-              <b>AI Research Intern</b> at Meta AI <br/>
-              Mentors: Dr. Y-Lan Boureau <br/>
-              August 2022 - November 2022
-          </p>
-          <p>
-              <b>AI Research Intern</b> at Bloomberg AI <br/>
-              Mentors: Mayank Kulkarni, Dr. Daniel Preoţiuc-Pietro <br/>
-              May 2021 - August 2021
-          </p>
-          <p>
-              <b>Graduate Research Assistant</b> at Ohio State University <br/>
-              Advisor: Professor Wei Xu <br/>
-              August 2017 - August 2020
-          </p>
-          <p>
-              <b>Software Development Engineer</b> at Big Data Technologies, Amazon <br/>
-              June 2015 - July 2017 <br/>
-          </p>
-          <p>
-              <b>Software Development Engineer Intern</b> at Big Data Technologies, Amazon <br/>
-              June 2014 - August 2014 <br/>
+          <div class="publication">
+            <div class="title">Dancing between Success and Failure: Edit-level Simplification Evaluation using SALSA</div>
+            <div class="authors">David Heineman, Yao Dou, <b>Mounica Maddela</b>, and Wei Xu</div>
+            <div class="venue">EMNLP 2023</div>
+            <div class="links">[<a href="https://arxiv.org/abs/2305.14458">paper</a>] [<a href="https://github.com/davidheineman/salsa">code/data</a>]</div>
+          </div>
 
-          </p>
+          <div class="more-publications" id="morePublications">
+          <div class="publication">
+            <div class="title">EntSUM: A Data Set for Entity-Centric Summarization</div>
+            <div class="authors"><b>Mounica Maddela</b>*, Mayank Kulkarni*, and Daniel Preoţiuc-Pietro (*equal contribution)</div>
+            <div class="venue">ACL 2022</div>
+            <div class="links">[<a href="https://arxiv.org/abs/2204.02213">paper</a>] [<a href="https://zenodo.org/record/6359875">data</a>]</div>
+          </div>
+
+          <div class="publication">
+            <div class="title">A Dataset of Word-Complexity Judgements from Deaf and Hard-of-Hearing Adults for Text Simplification</div>
+            <div class="authors">Oliver Alonzo, Sooyeon Lee, <b>Mounica Maddela</b>, Wei Xu, and Matt Huenerfauth</div>
+            <div class="venue">TSAR Workshop at EMNLP 2022</div>
+            <div class="links">[<a href="https://aclanthology.org/2022.tsar-1.11/">paper</a>]</div>
+          </div>
+
+          <div class="publication">
+            <div class="title">Extractive Entity-Centric Summarization as Sentence Selection using Bi-Encoders</div>
+            <div class="authors">Ella Hofmann-Coyle, Mayank Kulkarni, Lingjue Xie, <b>Mounica Maddela</b>, and Daniel Preoţiuc-Pietro</div>
+            <div class="venue">AACL 2022</div>
+            <div class="links">[<a href="https://aclanthology.org/2022.aacl-short.40.pdf">paper</a>]</div>
+          </div>
+
+          <div class="publication">
+            <div class="title">BiSECT: Learning to Split and Rephrase Sentences with Bitexts</div>
+            <div class="authors">Joongwon Kim*, <b>Mounica Maddela</b>*, Reno Kriz, Wei Xu, and Chris Callison-Burch (*equal contribution)</div>
+            <div class="venue">EMNLP 2021</div>
+            <div class="links">[<a href="https://arxiv.org/abs/2109.05006">paper</a>] [<a href="https://github.com/mounicam/BiSECT">code/data</a>]</div>
+          </div>
+
+          <div class="publication">
+            <div class="title">Controllable Text Simplification with Explicit Paraphrasing</div>
+            <div class="authors"><b>Mounica Maddela</b>, Fernando Alva-Manchego, and Wei Xu</div>
+            <div class="venue">NAACL 2021</div>
+            <div class="links">[<a href="https://aclanthology.org/2021.naacl-main.277.pdf">paper</a>] [<a href="https://github.com/mounicam/controllable_simplification">code/data</a>] [<a href="files/naacl2021_controllable_poster.pdf">slides</a>] [<a href="files/naacl2021_controllable_talk.pdf">poster</a>]</div>
+          </div>
+
+          <div class="publication">
+            <div class="title">The GEM Benchmark: Natural Language Generation, its Evaluation and Metrics</div>
+            <div class="authors">Multi-author collaboration</div>
+            <div class="venue">ACL 2021</div>
+            <div class="links">[<a href="https://arxiv.org/abs/2102.01672">paper</a>] [<a href="https://gem-benchmark.com/">project website</a>]</div>
+          </div>
+
+          <div class="publication">
+            <div class="title">Neural CRF Model for Sentence Alignment in Text Simplification</div>
+            <div class="authors">Chao Jiang, <b>Mounica Maddela</b>, Wuwei Lan, Yang Zhong, and Wei Xu</div>
+            <div class="venue">ACL 2020</div>
+            <div class="links">[<a href="http://arxiv.org/abs/2005.02324">paper</a>] [<a href="https://github.com/chaojiang06/wiki-auto">code/data</a>] [<a href="https://chaojiang06.github.io/files/ACL2020_alignment_slide_v10.pdf">slides</a>] [<a href="https://www.youtube.com/watch?v=xgYYlO8jkVc&feature=youtu.be">video</a>]</div>
+          </div>
+
+          <div class="publication">
+            <div class="title">Code and Named Entity Recognition in StackOverflow</div>
+            <div class="authors">Jeniya Tabassum, <b>Mounica Maddela</b>, Wei Xu, and Alan Ritter</div>
+            <div class="venue">ACL 2020</div>
+            <div class="links">[<a href="https://arxiv.org/abs/2005.01634">paper</a>] [<a href="https://github.com/jeniyat/StackOverflowNER/">code/data</a>]</div>
+          </div>
+
+          <div class="publication">
+            <div class="title">Multi-task Pairwise Neural Ranking for Hashtag Segmentation</div>
+            <div class="authors"><b>Mounica Maddela</b>, Wei Xu, and Daniel Preoţiuc-Pietro</div>
+            <div class="venue">ACL 2019</div>
+            <div class="links">[<a href="https://aclanthology.org/P19-1242">paper</a>] [<a href="https://github.com/mounicam/hashtag_master">code/data</a>] [<a href="files/acl2019-poster-final.pdf">poster</a>]</div>
+          </div>
+
+          <div class="publication">
+            <div class="title">A Word-Complexity Lexicon and A Neural Readability Ranking Model for Lexical Simplification</div>
+            <div class="authors"><b>Mounica Maddela</b> and Wei Xu</div>
+            <div class="venue">EMNLP 2018</div>
+            <div class="links">[<a href="https://aclanthology.org/D18-1410/">paper</a>] [<a href="files/2018_EMNLP_mm_07.pdf">slides</a>] [<a href="https://github.com/mounicam/lexical_simplification">code/data</a>]</div>
+          </div>
+          </div>
+
+          <a href="javascript:void(0);" class="show-more-link" id="showMoreBtn" onclick="togglePublications()">Show more publications</a>
 
       </section>
+
 
       <section>
-          <h2>Awards</h2>
-          The Ohio State University Fellowship for 2017-2018<br/>
-          Research Award for undergraduate students at IIIT-H for 2011-2012<br/>
-          Deans Academic Award List for all the 8 semesters (Fall 2009 - Spring 2013)<br/>
+          <h2>Professional Services</h2>
+          <div class="service-item">
+              <b>Area Chair:</b> ACL 2026 (System Demonstrations), LREC 2026
+          </div>
+          <div class="service-item">
+              <b>Reviewer:</b> ACL (2019–2026), NAACL (2019–2025), EMNLP (2019–2025), ARR (2022–2026), COLM (2023-24)
+          </div>
+          <div class="service-item">
+              <b>Co-organizer:</b> The GEM Benchmark: Language Generation, Evaluation and Metrics Workshop (ACL 2021)
+          </div>
+          <div class="service-item">
+              <b>Co-organizer:</b> Georgia Tech NLP seminar 2020-2021
+          </div>
       </section>
 
 
@@ -207,5 +258,19 @@
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
+    <script>
+      function togglePublications() {
+        var morePublications = document.getElementById("morePublications");
+        var btn = document.getElementById("showMoreBtn");
+
+        if (morePublications.style.display === "none" || morePublications.style.display === "") {
+          morePublications.style.display = "block";
+          btn.textContent = "Show fewer publications";
+        } else {
+          morePublications.style.display = "none";
+          btn.textContent = "Show more publications";
+        }
+      }
+    </script>
   </body>
 </html>
